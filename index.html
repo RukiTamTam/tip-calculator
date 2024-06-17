@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script
+			type="module"
+			src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+		></script>
+		<script
+			nomodule
+			src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+		></script>
+		<title>Tip Calculator</title>
+	</head>
+	<bod
+		<div class="container">
+			<div class="total-bill">
+				<p>Total Bill: <span class="bill">0</span></p>
+			</div>
+            
+            <div class="payment_each_person">
+				<p>Payment of Each Person: <span class="heads">0</span></p>
+			</div>
+            
+			<form action="">
+				<div class="input-bill">
+					<label for="">
+						<span>Input Bill</span>
+						<input type="text" value="" id="input-bill" />
+					</label>
+				</div>
+
+				<div class="tip-percentage">
+					<label for="tip-percentage-1">
+						<input
+							type="radio"
+							name="tip-percentage"
+							id="tip-percentage-1"
+							class="tip-percentage"
+							value="0.05"
+						/>
+						<span>5%</span>
+					</label>
+					<label for="tip-percentage-2">
+						<input
+							type="radio"
+							name="tip-percentage"
+							id="tip-percentage-2"
+							class="tip-percentage"
+							value="0.1"
+						/>
+						<span>10%</span>
+					</label>
+					<label for="tip-percentage-3">
+						<input
+							type="radio"
+							name="tip-percentage"
+							id="tip-percentage-3"
+							class="tip-percentage"
+							value="0.15"
+						/>
+						<span>15%</span>
+					</label>
+					<label for="tip-percentage-4">
+						<input
+							type="radio"
+							name="tip-percentage"
+							id="tip-percentage-4"
+							class="tip-percentage"
+							value="0.2"
+						/>
+						<span>20%</span>
+					</label>
+
+					<label for="">
+						<span>Tip %</span>
+						<input type="text" id="tip-percentage-input" />
+					</label>
+				</div>
+
+				<div class="number-of-people">
+					<button type="button" id="decrease-people">
+						<ion-icon name="remove-outline"></ion-icon>
+					</button>
+					<input type="text" id="number-of-people" />
+					<button type="button" id="increase-people">
+						<ion-icon name="add-outline"></ion-icon>
+					</button>
+				</div>
+
+				<button type="button" id="calculate-tip">Calculate</button>
+			</form>
+
+			<button type="button" id="reset-form">Reset</button>
+		</div>
+
+		<script src="script.js"></script>
+	</body>
+</html>
